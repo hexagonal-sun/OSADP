@@ -1,0 +1,25 @@
+#+TITLE: OSADP - Open SADP
+
+This project is an open-source implementation of HikVision's [[https://www.hikvision.com/en/support/tools/destop-tools/sadp-for-windows/][SADP]] tool.
+
+Currently it only supports scanning for new devices and prints them on the
+console:
+
+#+begin_example
+Searching for devices...
+
+New device found at 192.168.88.150:
+    Subnet Mask: 255.255.255.0
+    Gateway: 192.168.88.1
+    Description: DS-7608NI-K2/8P
+    Serial Number: DS-7608NI-K2/8P[...]
+    Is activated: True
+#+end_example
+
+* Building
+Compilation requires a working haskell enviroement. Once ghc and cabal are
+installed you should be able to run:
+#+begin_example
+cabal v2-run
+#+end_example
+to compile and execute the program.
